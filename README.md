@@ -3,10 +3,13 @@ Implemented unscented Kalman filter using the CTRV motion model. We will be usin
 
 ## Output:
 RMSE
-0.0730622
-0.0843373
-0.349426
-0.263418
+0.0730622,
+
+0.0843373,
+
+0.349426,
+
+0.263418,
 
 
 ### Details:
@@ -23,7 +26,8 @@ Nonlinear state estimation is a challenge problem. The Extended Kalman Filter (E
 The Unscented Kalman Filter (UKF) is a novel development in the field. The idea is to produce several sampling points (Sigma points) around the current state estimate based on its covariance. Then, propagating these points through the nonlinear map to get more accurate estimation of the mean and covariance of the mapping results. In this way, it avoids the need to calculate the Jacobian, hence incurs only the similar computation load as the EKF.
 
 
-## Dependencie
+## Dependencies
+
 * cmake >= v3.5
 * make >= v4.1
 * gcc/g++ >= v5.4
