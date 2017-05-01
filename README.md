@@ -46,3 +46,12 @@ The Unscented Kalman Filter (UKF) is a novel development in the field. The idea 
 1. Use NIS to help tune your parameters
 2. Visualize the ground truth, sensor measurements, and your Kalman filter results
 3. Compare UKF and EKF project results. Both projects use the same data file. RMSEshould be lower for the UKF project than the EKF project
+
+## References:
+
+1. https://github.com/balzer82/Kalman
+2. https://www.youtube.com/watch?v=CaCcOwJPytQ&list=PLX2gX-ftPVXU3oUFNATxGXY90AULiqnWT&index=1
+3. https://medium.com/@anthony_sarkis/what-is-a-kalman-filter-and-why-is-there-an-unscented-version-bc5f6e77c509
+4. https://carnd.slack.com/messages/C4BN20M33/convo/C4BN20M33-1493506676.583204/
+5. https://classroom.udacity.com/nanodegrees/nd013/syllabus
+6. https://medium.com/tag/kalman-filter
