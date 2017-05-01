@@ -38,7 +38,7 @@ is_initialized_=false;
   //P_ ##initialize matrix if required
 
   // Process noise standard deviation longitudinal acceleration in m/s^2
-  std_a_ = 3;
+  std_a_ = 2;
 
   // Process noise standard deviation yaw acceleration in rad/s^2
   std_yawdd_ = 1; // ##1
@@ -346,7 +346,7 @@ void UKF::UpdateLidar(MeasurementPackage meas_package) {
   MatrixXd K = Tc*S.inverse();
   //residual
   VectorXd z_diff_ = z - z_pred;
-  
+
   //update state mean and covariance matrix
   x_ += K*z_diff_;
   P_ += -K*S*K.transpose();
