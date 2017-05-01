@@ -42,7 +42,7 @@ The Unscented Kalman Filter (UKF) is a novel development in the field. The idea 
    some sample inputs in 'data/'.
     - eg. `./UnscentedKF ../data/obj_pose-laser-radar-synthetic-input.txt`
 
-## TODO:
+## To do:
 1. Use NIS to help tune your parameters
 2. Visualize the ground truth, sensor measurements, and your Kalman filter results
 3. Compare UKF and EKF project results. Both projects use the same data file. RMSEshould be lower for the UKF project than the EKF project
