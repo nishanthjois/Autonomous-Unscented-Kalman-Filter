@@ -1,10 +1,29 @@
-# Unscented Kalman Filter Project Starter Code
-Self-Driving Car Engineer Nanodegree Program
+# Unscented Kalman Filter Project:
+Implemented unscented Kalman filter using the CTRV motion model. We will be using the bicycle simulation data. 
 
----
+## Output:
+RMSE
+0.0730622
+0.0843373
+0.349426
+0.263418
 
-## Dependencies
 
+### Details:
+Kalman filters have the same three steps:
+
+1. Initialization
+2. Prediction
+3. Update
+
+A standard Kalman filter can only handle linear equations. Both the extended Kalman filter and the unscented Kalman filter allow you to use non-linear equations; the difference between EKF and UKF is how they handle non-linear equations. But the basics are the same: initialize, predict, update.
+
+Nonlinear state estimation is a challenge problem. The Extended Kalman Filter (EKF) has become a standarded formulation for nonlinear state estimation. However, it may cause significant error for highly nonlinear systems because of the propagation of uncertainty through the nonlinear system.
+
+The Unscented Kalman Filter (UKF) is a novel development in the field. The idea is to produce several sampling points (Sigma points) around the current state estimate based on its covariance. Then, propagating these points through the nonlinear map to get more accurate estimation of the mean and covariance of the mapping results. In this way, it avoids the need to calculate the Jacobian, hence incurs only the similar computation load as the EKF.
+
+
+## Dependencie
 * cmake >= v3.5
 * make >= v4.1
 * gcc/g++ >= v5.4
@@ -18,30 +37,7 @@ Self-Driving Car Engineer Nanodegree Program
    some sample inputs in 'data/'.
     - eg. `./UnscentedKF ../data/obj_pose-laser-radar-synthetic-input.txt`
 
-## Editor Settings
-
-We've purposefully kept editor configuration files out of this repo in order to
-keep it as simple and environment agnostic as possible. However, we recommend
-using the following settings:
-
-* indent using spaces
-* set tab width to 2 spaces (keeps the matrices in source code aligned)
-
-## Code Style
-
-Please stick to [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html) as much as possible.
-
-## Generating Additional Data
-
-This is optional!
-
-If you'd like to generate your own radar and lidar data, see the
-[utilities repo](https://github.com/udacity/CarND-Mercedes-SF-Utilities) for
-Matlab scripts that can generate additional data.
-
-## Project Instructions and Rubric
-
-This information is only accessible by people who are already enrolled in Term 2
-of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/c3eb3583-17b2-4d83-abf7-d852ae1b9fff/concepts/f437b8b0-f2d8-43b0-9662-72ac4e4029c1)
-for instructions and the project rubric.
-# CarND-Unscented-Kalman-Filter
+## TODO:
+1. Use NIS to help tune your parameters
+2. Visualize the ground truth, sensor measurements, and your Kalman filter results
+3. Compare UKF and EKF project results. Both projects use the same data file. RMSEshould be lower for the UKF project than the EKF project
