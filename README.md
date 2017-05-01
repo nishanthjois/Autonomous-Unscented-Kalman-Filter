@@ -4,13 +4,13 @@ Implemented unscented Kalman filter using the CTRV motion model. We will be usin
 ## Output:
 ### RMSE:
 
-0.0730622,
+0.0698414
 
-0.0843373,
+0.0827661
 
-0.349426,
+0.336433
 
-0.263418,
+0.248774
 
 
 ### Details:
