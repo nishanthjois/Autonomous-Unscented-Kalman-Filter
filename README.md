@@ -2,7 +2,8 @@
 Implemented unscented Kalman filter using the CTRV motion model. We will be using the bicycle simulation data. 
 
 ## Output:
-RMSE
+### RMSE:
+
 0.0730622,
 
 0.0843373,
